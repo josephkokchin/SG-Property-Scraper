@@ -1,0 +1,505 @@
+2019-07-06 03:11:07 [scrapy.utils.log] INFO: Scrapy 1.5.2 started (bot: sgpropbot)
+2019-07-06 03:11:07 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.3 | packaged by conda-forge | (default, Jul  1 2019, 21:52:21) - [GCC 7.3.0], pyOpenSSL 19.0.0 (OpenSSL 1.1.1  11 Sep 2018), cryptography 2.7, Platform Linux-4.18.0-25-generic-x86_64-with-debian-buster-sid
+2019-07-06 03:11:07 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'BOT_NAME': 'sgpropbot', 'DOWNLOAD_DELAY': 3, 'FEED_FORMAT': 'json', 'FEED_URI': 'data.json', 'LOG_FILE': 'run.log', 'NEWSPIDER_MODULE': 'sgprop_bot.spiders', 'SPIDER_LOADER_WARN_ONLY': True, 'SPIDER_MODULES': ['sgpropbot.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; ja-jp) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27'}
+2019-07-06 03:11:07 [scrapy.extensions.telnet] INFO: Telnet Password: 6b93d7259ee3b60c
+2019-07-06 03:11:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2019-07-06 03:11:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-06 03:11:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-06 03:11:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['sgpropbot.pipelines.SgpropbotPipeline']
+2019-07-06 03:11:07 [scrapy.core.engine] INFO: Spider opened
+2019-07-06 03:11:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-06 03:11:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6025
+2019-07-06 03:11:08 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.99.co/singapore/rent?page_num=0&sort_field=price&sort_order=asc> (failed 1 times): 503 Service Unavailable
+2019-07-06 03:11:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=1&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=2&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=3&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=4&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=5&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=6&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=7&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=8&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=9&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:47 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.99.co/singapore/rent/property/crescent-building-condo-tWxyD29ACXXahgVRauu52K> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-07-06 03:11:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=10&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=11&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:11:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=12&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:12:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=13&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=14&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:12:07 [scrapy.extensions.logstats] INFO: Crawled 14 pages (at 14 pages/min), scraped 0 items (at 0 items/min)
+2019-07-06 03:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=15&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:12:12 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.99.co/singapore/rent?page_num=0&sort_field=price&sort_order=asc> (failed 2 times): 503 Service Unavailable
+2019-07-06 03:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc> (referer: None)
+2019-07-06 03:12:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/453-tampines-street-42-hdb-JMHReS8sw6V6iG5sDNRZGo> (referer: https://www.99.co/singapore/rent?page_num=1&sort_field=price&sort_order=asc)
+2019-07-06 03:12:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/453-tampines-street-42-hdb-JMHReS8sw6V6iG5sDNRZGo> (referer: https://www.99.co/singapore/rent?page_num=1&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/279-toh-guan-road-hdb-MfXkwLThsZw4vKaSjWoDmH> (referer: https://www.99.co/singapore/rent?page_num=2&sort_field=price&sort_order=asc)
+2019-07-06 03:12:24 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/279-toh-guan-road-hdb-MfXkwLThsZw4vKaSjWoDmH> (referer: https://www.99.co/singapore/rent?page_num=2&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/sunny-grove-condo-Pse7s7i8g5Yf9nvHx4FoMb> (referer: https://www.99.co/singapore/rent?page_num=3&sort_field=price&sort_order=asc)
+2019-07-06 03:12:26 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/sunny-grove-condo-Pse7s7i8g5Yf9nvHx4FoMb> (referer: https://www.99.co/singapore/rent?page_num=3&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/503-ang-mo-kio-avenue-5-hdb-3DD3in4gaWneawfKqLX6VY> (referer: https://www.99.co/singapore/rent?page_num=4&sort_field=price&sort_order=asc)
+2019-07-06 03:12:30 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/503-ang-mo-kio-avenue-5-hdb-3DD3in4gaWneawfKqLX6VY> (referer: https://www.99.co/singapore/rent?page_num=4&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/326-sumang-walk-hdb-FLpGFyVUD6HHxSourjjnr6> (referer: https://www.99.co/singapore/rent?page_num=5&sort_field=price&sort_order=asc)
+2019-07-06 03:12:34 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/326-sumang-walk-hdb-FLpGFyVUD6HHxSourjjnr6> (referer: https://www.99.co/singapore/rent?page_num=5&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/jalan-tanjong-landed-5jYDpUYurwdcefKt4Ri9EQ> (referer: https://www.99.co/singapore/rent?page_num=6&sort_field=price&sort_order=asc)
+2019-07-06 03:12:36 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/jalan-tanjong-landed-5jYDpUYurwdcefKt4Ri9EQ> (referer: https://www.99.co/singapore/rent?page_num=6&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/209c-punggol-place-hdb-QBtM3GBdECAvEzp3V7Um6j> (referer: https://www.99.co/singapore/rent?page_num=7&sort_field=price&sort_order=asc)
+2019-07-06 03:12:39 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/209c-punggol-place-hdb-QBtM3GBdECAvEzp3V7Um6j> (referer: https://www.99.co/singapore/rent?page_num=7&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/forestville-condo-MWgXVMC3g5JbFQctWH7Xc6> (referer: https://www.99.co/singapore/rent?page_num=8&sort_field=price&sort_order=asc)
+2019-07-06 03:12:41 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/forestville-condo-MWgXVMC3g5JbFQctWH7Xc6> (referer: https://www.99.co/singapore/rent?page_num=8&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/trilive-condo-M58uYqfqVZMxmnQwqta2wM> (referer: https://www.99.co/singapore/rent?page_num=9&sort_field=price&sort_order=asc)
+2019-07-06 03:12:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/trilive-condo-M58uYqfqVZMxmnQwqta2wM> (referer: https://www.99.co/singapore/rent?page_num=9&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/forestville-condo-TxRDzDcqpRZH9FKYQTwqh5> (referer: https://www.99.co/singapore/rent?page_num=10&sort_field=price&sort_order=asc)
+2019-07-06 03:12:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/forestville-condo-TxRDzDcqpRZH9FKYQTwqh5> (referer: https://www.99.co/singapore/rent?page_num=10&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/chuan-park-condo-8saqu4hbdZAjdgU4E93Qjg> (referer: https://www.99.co/singapore/rent?page_num=11&sort_field=price&sort_order=asc)
+2019-07-06 03:12:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/chuan-park-condo-8saqu4hbdZAjdgU4E93Qjg> (referer: https://www.99.co/singapore/rent?page_num=11&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/top-ten-condo-Lt2DUrFpPA9SVmK4v3fb2g> (referer: https://www.99.co/singapore/rent?page_num=12&sort_field=price&sort_order=asc)
+2019-07-06 03:12:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/top-ten-condo-Lt2DUrFpPA9SVmK4v3fb2g> (referer: https://www.99.co/singapore/rent?page_num=12&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:12:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/treasures-g20-condo-hBtxSATbcBmYtuyvvPoeZ9> (referer: https://www.99.co/singapore/rent?page_num=13&sort_field=price&sort_order=asc)
+2019-07-06 03:12:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/treasures-g20-condo-hBtxSATbcBmYtuyvvPoeZ9> (referer: https://www.99.co/singapore/rent?page_num=13&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/twin-waterfalls-condo-mVUkXUXbVqbP69mKDH7qY6> (referer: https://www.99.co/singapore/rent?page_num=14&sort_field=price&sort_order=asc)
+2019-07-06 03:13:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/twin-waterfalls-condo-mVUkXUXbVqbP69mKDH7qY6> (referer: https://www.99.co/singapore/rent?page_num=14&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/521-bedok-north-avenue-1-hdb-624s6JFc4B9ZzbQGmoiTj> (referer: https://www.99.co/singapore/rent?page_num=15&sort_field=price&sort_order=asc)
+2019-07-06 03:13:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/521-bedok-north-avenue-1-hdb-624s6JFc4B9ZzbQGmoiTj> (referer: https://www.99.co/singapore/rent?page_num=15&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:07 [scrapy.extensions.logstats] INFO: Crawled 31 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2019-07-06 03:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/635-woodlands-ring-road-hdb-AdQo3Goh7itKyGapoNWDeN> (referer: https://www.99.co/singapore/rent?page_num=15&sort_field=price&sort_order=asc)
+2019-07-06 03:13:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/635-woodlands-ring-road-hdb-AdQo3Goh7itKyGapoNWDeN> (referer: https://www.99.co/singapore/rent?page_num=15&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/137-bishan-street-12-hdb-Mhe2yW2HUP8g6XctLhRtQi> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/137-bishan-street-12-hdb-Mhe2yW2HUP8g6XctLhRtQi> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/17-teck-whye-lane-hdb-RnKGwpW596vJR4jwKdaw59> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/17-teck-whye-lane-hdb-RnKGwpW596vJR4jwKdaw59> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/289a-compassvale-crescent-hdb-btsEaE9aLLPW2BbwhpgxoB> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/289a-compassvale-crescent-hdb-btsEaE9aLLPW2BbwhpgxoB> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/crescent-building-condo-im9NxYMycNUDEcftSQzeRN> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/crescent-building-condo-im9NxYMycNUDEcftSQzeRN> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/lakeside-tower-condo-6UuvLvfa2RG5BAhCp2AYvT> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/lakeside-tower-condo-6UuvLvfa2RG5BAhCp2AYvT> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/179-woodlands-street-13-hdb-H3gL4RBgx2TjtBXZYhcHeD> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:32 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/179-woodlands-street-13-hdb-H3gL4RBgx2TjtBXZYhcHeD> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/89-bedok-north-street-4-hdb-59Ca7uJLhv6SZq26Ne2qym> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:37 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/89-bedok-north-street-4-hdb-59Ca7uJLhv6SZq26Ne2qym> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/534-bukit-batok-street-51-hdb-PYNkj9sBd264YoErvCPyqf> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:40 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/534-bukit-batok-street-51-hdb-PYNkj9sBd264YoErvCPyqf> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined
+2019-07-06 03:13:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.99.co/singapore/rent/property/kensington-square-condo-tPzyiY5vgeQhdrpbyv6hwd> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+2019-07-06 03:13:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.99.co/singapore/rent/property/kensington-square-condo-tPzyiY5vgeQhdrpbyv6hwd> (referer: https://www.99.co/singapore/rent?page_num=16&sort_field=price&sort_order=asc)
+Traceback (most recent call last):
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/josephkchin/anaconda3/envs/workspace/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 78, in _parse_response
+    for requests_or_item in iterate_spider_output(cb_res):
+  File "/home/josephkchin/sgpropbot/sgpropbot/spiders/properties.py", line 18, in parse_items
+    loader = ItemLoader(item=SgpropItem(), selector=row)
+NameError: name 'SgpropItem' is not defined

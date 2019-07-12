@@ -1,0 +1,5 @@
+fetch('https://www.99.co/singapore/rent?page_num=1&sort_field=price&sort_order=asc') 
+
+view(response)
+
+response.xpath('//*[@id="nintynine_page_container"]/div/div[1]/section/div[2]/div/div/div[2]/div/div/div/a/@href').extract()
