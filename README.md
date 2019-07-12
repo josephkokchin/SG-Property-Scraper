@@ -1,6 +1,6 @@
 # Property Data Scraper
 
-This is the codebase for a web crawler that I have built to extract the residential listings available for renting in Singapore from https://www.99.co
+This is the codebase for a web crawler that I have built to extract the residential listings available for renting in Singapore.
 
 ## Usage
 This web crawler can currently extract the following metrics of each listings.
