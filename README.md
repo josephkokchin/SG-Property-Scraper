@@ -74,7 +74,7 @@ scrapy runspider properties.py
 * [datetime](https://docs.python.org/3.7/library/datetime.html)
 
 ## Scraped Data Output
-The data output was set as JSON file format by default. However, this can be easily changed by amending the `setting.py`.
+The data output was set as JSON file format by default. However, this can be easily changed by amending the `setting.py`. I have provided a sample of data output [here](https://github.com/josephkokchin/SG-Property-Scraper/blob/master/properties_data_2019-07-12T16-19-53.json).
 
 ## Next Up
 Following up project, I will use the scraped data to conduct an exploratory data analysis and interactive dashboard and follow by building a rental prediction model.
