@@ -78,7 +78,7 @@ The data output was set as JSON file format by default. However, this can be eas
 
 ## Next Up
 Following up project, I will use the scraped data to:
-* Provide a walkthrough on how to export data into database like [MYSQL](https://www.mysql.com/) or [Postgres](https://www.postgresql.org/)
+* Provide a walkthrough on how to export data into database like [MySQL](https://www.mysql.com/) or [PostgreSQL](https://www.postgresql.org/)
 * Conduct an exploratory data analysis
 * Make an interactive dashboard 
 * Building a rental prediction model
