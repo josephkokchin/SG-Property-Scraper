@@ -77,7 +77,11 @@ scrapy runspider properties.py
 The data output was set as JSON file format by default. However, this can be easily changed by amending the `setting.py`. I have provided a sample of data output [here](https://github.com/josephkokchin/SG-Property-Scraper/blob/master/properties_data_2019-07-12T16-19-53.json).
 
 ## Next Up
-Following up project, I will use the scraped data to conduct an exploratory data analysis and interactive dashboard and follow by building a rental prediction model.
+Following up project, I will use the scraped data to:
+* Provide a walkthrough on how to export data into database like [MYSQL](https://www.mysql.com/) or [Postgres](https://www.postgresql.org/)
+* Conduct an exploratory data analysis
+* Make an interactive dashboard 
+* Building a rental prediction model
 
 ## Resources
 The most essential part of building a good scraper is to have a good understanding of the website layout so that you are able to extract the right item. The most effective way is through a selector (CSS or XPath) and for specific text extraction, you have to familiar with regex.
