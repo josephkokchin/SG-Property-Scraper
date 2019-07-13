@@ -19,6 +19,11 @@ This web crawler can currently extract the following metrics of each listings.
 * Key Details (Rules set by landlord and etc)
 * Nearest MRT station and distance
 
+## Prerequisite
+* Basic Understanding in [HTML Structure](https://www.w3schools.com/html/)
+* [Python](https://amzn.to/2l8jarE)
+* Basic Understanding of Shell command
+
 ## Installation
 This scraper was built using the [scrapy](https://scrapy.org/) framework in Python 3.7. You are required to install scrapy in order to run the scraper.
 
