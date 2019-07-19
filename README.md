@@ -37,7 +37,7 @@ Conda:
 conda install -c conda-forge scrapy
 ```
 
-Otherwise, you can download the `requirement.txt`file and use the following code to install the packages stated.
+Otherwise, you can download the [requirement.txt](https://github.com/josephkokchin/SG-Property-Scraper/blob/master/requirements.txt) file and use the following code to install the packages stated.
 ```
 $ while read requirement; do conda install --yes $requirement; done < requirements.txt
 ```
